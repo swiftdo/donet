@@ -3,11 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2481FB79254FAF6B004270B1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481FB78254FAF6B004270B1 /* main.swift */; };
+		2481FB82254FB0A3004270B1 /* NIOHTTP1 in Frameworks */ = {isa = PBXBuildFile; productRef = 2481FB81254FB0A3004270B1 /* NIOHTTP1 */; };
+		2481FB84254FB0A3004270B1 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = 2481FB83254FB0A3004270B1 /* NIO */; };
+		2481FB87254FB1FD004270B1 /* DoNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481FB86254FB1FD004270B1 /* DoNet.swift */; };
+		2481FB8A254FB8EA004270B1 /* IncomingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481FB89254FB8EA004270B1 /* IncomingMessage.swift */; };
+		2481FB8D254FB944004270B1 /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481FB8C254FB944004270B1 /* ServerResponse.swift */; };
+		2481FB90254FD453004270B1 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481FB8F254FD453004270B1 /* Middleware.swift */; };
+		2481FB93254FD4B4004270B1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481FB92254FD4B4004270B1 /* Router.swift */; };
+		2481FB96254FDBC2004270B1 /* QueryString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481FB95254FDBC2004270B1 /* QueryString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +33,12 @@
 /* Begin PBXFileReference section */
 		2481FB75254FAF6B004270B1 /* donet */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = donet; sourceTree = BUILT_PRODUCTS_DIR; };
 		2481FB78254FAF6B004270B1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2481FB86254FB1FD004270B1 /* DoNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoNet.swift; sourceTree = "<group>"; };
+		2481FB89254FB8EA004270B1 /* IncomingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingMessage.swift; sourceTree = "<group>"; };
+		2481FB8C254FB944004270B1 /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+		2481FB8F254FD453004270B1 /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
+		2481FB92254FD4B4004270B1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		2481FB95254FDBC2004270B1 /* QueryString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2481FB82254FB0A3004270B1 /* NIOHTTP1 in Frameworks */,
+				2481FB84254FB0A3004270B1 /* NIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +74,12 @@
 			isa = PBXGroup;
 			children = (
 				2481FB78254FAF6B004270B1 /* main.swift */,
+				2481FB95254FDBC2004270B1 /* QueryString.swift */,
+				2481FB86254FB1FD004270B1 /* DoNet.swift */,
+				2481FB89254FB8EA004270B1 /* IncomingMessage.swift */,
+				2481FB8C254FB944004270B1 /* ServerResponse.swift */,
+				2481FB8F254FD453004270B1 /* Middleware.swift */,
+				2481FB92254FD4B4004270B1 /* Router.swift */,
 			);
 			path = donet;
 			sourceTree = "<group>";
@@ -78,6 +100,10 @@
 			dependencies = (
 			);
 			name = donet;
+			packageProductDependencies = (
+				2481FB81254FB0A3004270B1 /* NIOHTTP1 */,
+				2481FB83254FB0A3004270B1 /* NIO */,
+			);
 			productName = donet;
 			productReference = 2481FB75254FAF6B004270B1 /* donet */;
 			productType = "com.apple.product-type.tool";
@@ -105,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 2481FB6C254FAF6B004270B1;
+			packageReferences = (
+				2481FB80254FB0A3004270B1 /* XCRemoteSwiftPackageReference "swift-nio" */,
+			);
 			productRefGroup = 2481FB76254FAF6B004270B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -119,6 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2481FB90254FD453004270B1 /* Middleware.swift in Sources */,
+				2481FB8A254FB8EA004270B1 /* IncomingMessage.swift in Sources */,
+				2481FB8D254FB944004270B1 /* ServerResponse.swift in Sources */,
+				2481FB87254FB1FD004270B1 /* DoNet.swift in Sources */,
+				2481FB93254FD4B4004270B1 /* Router.swift in Sources */,
+				2481FB96254FDBC2004270B1 /* QueryString.swift in Sources */,
 				2481FB79254FAF6B004270B1 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +320,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2481FB80254FB0A3004270B1 /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.23.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2481FB81254FB0A3004270B1 /* NIOHTTP1 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2481FB80254FB0A3004270B1 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOHTTP1;
+		};
+		2481FB83254FB0A3004270B1 /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2481FB80254FB0A3004270B1 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2481FB6D254FAF6B004270B1 /* Project object */;
 }
